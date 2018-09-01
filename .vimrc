@@ -17,7 +17,7 @@ let g:rehash256=1
 set t_Co=256
 set background=dark
 let g:molokai_original=1
-let Tlist_Auto_Highlight_Tag=1
+"let Tlist_Auto_Highlight_Tag=1
 "Tagbar Config
 nmap <F9> :TagbarToggle<CR>
 let g:tagbar_zoomwidth = 1
@@ -49,4 +49,4 @@ let g:airline_symbols.readonly = '⭤'
 let g:airline_theme='fairyfloss'
 let g:tagbar_ctags_bin='/usr/bin/ctags'  
 let g:SuperTabRetainCompletionType=2
-set noignorecase
+set ignorecase
