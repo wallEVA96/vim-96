@@ -12,6 +12,10 @@ set hlsearch
 set nocompatible
 set autoindent  
 set cindent  
+" jump to last closed location.
+if has("autocmd")
+	  au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
+endif
 set smartindent 
 let g:rehash256=1
 set t_Co=256
