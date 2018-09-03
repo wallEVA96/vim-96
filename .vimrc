@@ -46,7 +46,7 @@ let g:airline_symbols.branch = '⭠'
 let g:airline_symbols.readonly = '⭤'
 "let g:airline_symbols.linenr = '⭡'
 
-let g:airline_theme='fairyfloss'
+let g:airline_theme='fairyfloss' "base16_harmonic16
 let g:tagbar_ctags_bin='/usr/bin/ctags'  
 let g:SuperTabRetainCompletionType=2
 set ignorecase
