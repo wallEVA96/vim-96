@@ -1,5 +1,4 @@
 set encoding=utf-8
-syntax enable
 syntax on
 if filereadable(expand("~/.vimrc.bundles"))
 	source ~/.vimrc.bundles
@@ -10,17 +9,17 @@ colorscheme molokai
 set laststatus=2 
 set hlsearch
 set nocompatible
-set autoindent  
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+set autoindent "auto indent  
 set cindent  
-" jump to last closed location.
-if has("autocmd")
-	  au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
-endif
 set smartindent 
 let g:rehash256=1
 set t_Co=256
 set background=dark
 let g:molokai_original=1
+syntax enable
 "let Tlist_Auto_Highlight_Tag=1
 "Tagbar Config
 nmap <F9> :TagbarToggle<CR>
@@ -50,7 +49,7 @@ let g:airline_symbols.branch = '⭠'
 let g:airline_symbols.readonly = '⭤'
 "let g:airline_symbols.linenr = '⭡'
 
-let g:airline_theme='fairyfloss' "base16_harmonic16
+let g:airline_theme='base16_hopscotch'
 let g:tagbar_ctags_bin='/usr/bin/ctags'  
 let g:SuperTabRetainCompletionType=2
 set ignorecase
