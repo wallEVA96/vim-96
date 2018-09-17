@@ -1,4 +1,5 @@
 set encoding=utf-8
+set t_RV= ttymouse=xterm2 " U can :echo set t_RV= ttymouse=xterm2 ,it will happen [>1;3409;0c code
 syntax on
 if filereadable(expand("~/.vimrc.bundles"))
 	source ~/.vimrc.bundles
