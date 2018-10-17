@@ -5,12 +5,17 @@ if filereadable(expand("~/.vimrc.bundles"))
 	source ~/.vimrc.bundles
 endif
 
+if has("autocmd")
+  au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
+endif
 "let TTlistToggle*list_Auto_Open=1
 colorscheme molokai
 set laststatus=2 
 set hlsearch
 set nocompatible
 set tabstop=4
+set number
+set mouse=a
 set softtabstop=4
 set shiftwidth=4
 set autoindent "auto indent  
