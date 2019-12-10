@@ -8,6 +8,8 @@ endif
 if has("autocmd")
   au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 endif
+
+let g:DoxygenToolkit_authorName="walleva"
 "let TTlistToggle*list_Auto_Open=1
 colorscheme molokai
 set laststatus=2 
