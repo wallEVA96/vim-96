@@ -61,3 +61,5 @@ let g:airline_theme='base16_hopscotch'
 let g:tagbar_ctags_bin='/usr/bin/ctags'  
 let g:SuperTabRetainCompletionType=2
 set ignorecase
+"config rainbow 
+autocmd VimEnter * RainbowParenthesesToggle
