@@ -39,7 +39,7 @@ Plugin 'SuperTab'
 Plugin 'scrooloose/nerdtree'
 Plugin 'aperezdc/vim-template'
 Plugin 'vim-scripts/DoxygenToolkit.vim'
-+Plugin 'kien/rainbow_parentheses.vim'
+Plugin 'kien/rainbow_parentheses.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
